@@ -1,3 +1,7 @@
-from django.db import models
+class tipousuario (models.Model):
 
-# Create your models here.
+  class gerente  (models.Model):
+      contrase
+      
+     
+   
