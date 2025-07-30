@@ -15,9 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("catalogoproducto/", include("catalogoproducto.urls")),
+    path("clientes/", include("clientes.urls")),
+    path("empleados/", include("empleados.urls")),
+    path("inventario/", include("inventario.urls")),
+    path("procesos/", include("procesos.urls")),
+    path("reportes/", include("reportes.urls")),
+
+
 ]
+
