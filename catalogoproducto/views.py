@@ -3,6 +3,8 @@
 # Create your views here.
 from django.http import HttpResponse
 
+from catalogoproducto.models import producto
+
 
 def index(request):
     return HttpResponse("catalogo de productos.")   
