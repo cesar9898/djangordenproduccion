@@ -2,6 +2,9 @@ from django.db import models
 
 # Create your models here.
 class tiposordenes(models.Model):
+    ordenoffset = models.CharField(max_length=100, unique=True)
+    ordendigital = models.CharField(max_length=100, unique=True)
+    ordenrotulacion = models.CharField(max_length=100, unique=True)
     pass
 
 class ordenfacturada (models.Model):   
