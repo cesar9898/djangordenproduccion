@@ -1,4 +1,6 @@
 from django.http import HttpResponse
+
+from inventario.models import producto
 # Create your views here.
 
 def index(request):
